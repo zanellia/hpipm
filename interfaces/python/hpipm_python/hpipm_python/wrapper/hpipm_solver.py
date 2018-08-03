@@ -517,8 +517,10 @@ def hpipm_solve:
 
     __hpipm.d_create_ocp_qp_ipm(dim, arg, workspace, ipm_mem)
 
-    return __hpipm.d_solve_ocp_qp_ipm(qp, qp_sol, 
-        arg, workspace)
+    __hpipm.d_solve_ocp_qp_ipm(qp, qp_sol, arg, workspace)
+
+    __hpipm.d_print_ocp_qp_sol(ocp_qp_sol, ocp_qp_dim)
+    return
 
 class hpipm_dims:
     def __init__(self):
