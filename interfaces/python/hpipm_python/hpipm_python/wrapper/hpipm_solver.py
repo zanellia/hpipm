@@ -1,9 +1,8 @@
 from ctypes import *
 import ctypes.util 
 import numpy as np
-import faulthandler
-
-faulthandler.enable()
+# import faulthandler
+# faulthandler.enable()
 
 class hpipm_solver:
     def __init__(self, qp_dims, qp_data):
