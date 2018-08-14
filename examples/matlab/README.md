@@ -3,7 +3,11 @@ HPIPM examples using the hpipm_matlab package.
 In order to be able to run the examples in this folder, it is necessary to install the shared libraries libblasfeo.so and libhpipm.so.
 The required shared libraries can be installed by running
 ```
-make shared_library -j4 & sudo make install_shared
+make shared_library -j4 
+```
+and
+```
+sudo make install_shared
 ```
 from the blasfeo and hpipm root folder.
 Make sure that the location of libblasfeo.so and libhpipm.so is known to the system by adding /opt/blasfeo/lib and /opt/hpipm/lib to LD_LIBRARY_PATH as
